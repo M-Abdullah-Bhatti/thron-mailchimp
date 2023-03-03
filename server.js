@@ -77,10 +77,10 @@ app.post("/form", async function (req, res) {
     });
 
     const savedUser = await newUser.save();
-    res.redirect("https://instagram.com/thron_eth?igshid=ZDdkNTZiNTM=");
+    res.redirect("/form");
     // res.status(200).json({ message: "User saved successfully", savedUser });
   } catch (error) {
-    res.redirect("https://instagram.com/thron_eth?igshid=ZDdkNTZiNTM=");
+    res.redirect("/form");
     // console.log(error);
     // res.status(500).json({ message: "Error saving user" });
   }

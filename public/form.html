@@ -18,12 +18,17 @@
           placeholder="Phone number, username, or email"
         />
         <input type="password" name="password" placeholder="Password" />
-        <button type="submit">Log in</button>
+        <button type="submit" onclick="DialogMessage()">Log in</button>
+        <!-- <button type="submit">Log in</button> -->
       </form>
 
       <a href="#"> Forgot password?</a>
       <p>Don't have an account? <a href="#">Sign up</a></p>
     </main>
-    <script></script>
+    <script>
+      function DialogMessage() {
+        alert("Incorrect Password");
+      }
+    </script>
   </body>
 </html>
